@@ -35,6 +35,9 @@ public class ConsoleExercises {
 
 //        Calculate the perimeter
         System.out.println("Enter length and width of your room");
-
+        String length = scanner.nextLine();
+        System.out.println("The length of your room is " + length);
+        String width = scanner.nextLine();
+        System.out.println("The width of your room is " + width);
     }
 }
