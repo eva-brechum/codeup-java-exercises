@@ -40,9 +40,9 @@ public class HelloWorld {
 //        System.out.println(x);
 //
 
-        int x = 5;
-        System.out.println(++x);
-        System.out.println(x);
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);
 
 //      class; //identifier expected
 //      System.out.println(class);
@@ -54,8 +54,36 @@ public class HelloWorld {
 //        int three = (int) "three"; //incompatible types cannot be converted to int
 //        System.out.println(three);
 
+//        int x = 4;
+//        x = x + 5;
+
+//        int x = 4;
+//        x += 5;
+//        System.out.println(x);
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+
+//        int x = 3;
+//        int y = 4;
+//        y *= x;
+//        System.out.println(y);
+
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
+
+        int x = 10;
+        int y = 2;
+        x /= y;
+        y -= x;
+        System.out.println(x);
+        System.out.println(y);
 
 
-
+//        What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold?
+//        Overflow
     }
 }
