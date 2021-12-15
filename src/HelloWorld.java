@@ -18,7 +18,14 @@ public class HelloWorld {
         long myNumber;
 //        System.out.println(myNumber); //variable myNumber not initialized
 
-//        myNumber = 3.14; //incompatible types: po
+//        myNumber = 3.14; //incompatible: possible lossy conversion from double to long
+
+        myNumber = 123L;
+        System.out.println(myNumber);
+
+        myNumber = 123;
+        System.out.println(myNumber);
+
 
 
     }
