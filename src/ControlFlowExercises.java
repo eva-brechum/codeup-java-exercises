@@ -22,13 +22,18 @@ public class ControlFlowExercises {
 //            System.out.println(i -= 5);
 //        }while(i >-10);
 //        for loops for 5s
-            for (int i = 100; i >= -10; i-= 5) {
-                System.out.println(i);
-            }
+//            for (int i = 100; i >= -10; i-= 5) {
+//                System.out.println(i);
+//            }
+
 //        double i = 2;
 //        do {
 //            System.out.println((int)i);
 //            i = Math.pow(i, 2);
 //        }while(i < 1000000);
+
+        for (double i =  2; i < 1000000; i = Math.pow(i, 2)) {
+            System.out.println((int)i);
+        }
     }
 }
