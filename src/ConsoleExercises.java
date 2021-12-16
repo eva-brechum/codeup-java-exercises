@@ -4,17 +4,17 @@ public class ConsoleExercises {
     public static void main(String[] args){
 //        #1
         double pi = 3.14159;
-//        System.out.format("The value of pi is approximately %f", pi);
+        System.out.format("The value of pi is approximately %.2f", pi);
 //        Or
-        System.out.printf("\n The value of pi is approximately %.2f. \n", pi);
+//        System.out.printf("\n The value of pi is approximately %.2f. \n", pi);
 
 //        EXPLORING SCANNER CLASS
 //        #1
-        Scanner scanner = new Scanner(System.in);
         System.out.println(" Please enter an integer");
+        Scanner scanner = new Scanner(System.in);
         int a;
         a = scanner.nextInt();
-        System.out.println("You have entered integer " + a);
+        System.out.println( a); //"You have entered integer " //);
 //        if not an integer (Exception in thread main java.util)
 
 //        #2
@@ -24,7 +24,8 @@ public class ConsoleExercises {
 //        String text1= scanner.next();
 //        String text2 =scanner.next();
 //        String text3= scanner.next();
-//        System.out.println("You wrote "+ text1  + text2 + text3);
+//        System.out.println("You wrote: "+ text1  + text2 + text3);
+//        System.out.println("You wrote: %n%s, %n%s, %n%s", text1, text2, text3);
 
 //        #3
 //        System.out.println("Enter a sentence");
@@ -37,7 +38,6 @@ public class ConsoleExercises {
 
 //        CALCULATE THE PERIMETER
 //        P= 2(l+w);
-//        #1
 //        Scanner in = new Scanner(System.in);
 //        System.out.println("Enter width of your room: ");
 //        int width = in.nextInt();
@@ -48,13 +48,22 @@ public class ConsoleExercises {
 //        String input = scanner.nextLine();
 
 
-//        #2
-        float length, width, area, perimeter;
+        System.out.println("Enter width");
+        double width = Double.parseDouble(scanner.nextLine());
+        System.out.println("Enter length");
+        double length = Double.parseDouble(scanner.nextLine());
+        double area = width * length;
+        double perimeter = (width * 2) * (length *2);
+        System.out.println("Area" + area);
+        System.out.println("Perimeter: " + perimeter);
+
+//
+//        float length, width, area, perimeter;
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the length of the rectangle:");
+        System.out.print("Enter the length:");
        length = in.nextFloat();
 
-       System.out.print("Enter the width of the rectangle: ");
+       System.out.print("Enter the width: ");
        width = in.nextFloat();
 
        perimeter = 2 * (length + width);
