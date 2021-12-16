@@ -21,7 +21,10 @@ public class ControlFlowExercises {
 //        do {
 //            System.out.println(i -= 5);
 //        }while(i >-10);
-
+//        for loops for 5s
+            for (int i = 100; i >= -10; i-= 5) {
+                System.out.println(i);
+            }
 //        double i = 2;
 //        do {
 //            System.out.println((int)i);
