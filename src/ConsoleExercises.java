@@ -58,21 +58,21 @@ public class ConsoleExercises {
         System.out.println("Perimeter: " + perimeter);
 
 //
-//        float length, width, area, perimeter;
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter the length:");
-       length = in.nextFloat();
-
-       System.out.print("Enter the width: ");
-       width = in.nextFloat();
-
-       perimeter = 2 * (length + width);
-
-       area = length * width;
-       System.out.println("Perimeter of rectangle " + perimeter + " units. ");
-       System.out.println("Area of rectangle is " + area + " sq. units. ");
-        System.out.println("The length of your room is " + length);
-//        String width = scanner.nextLine();
-        System.out.println("The width of your room is " + width);
+////        float length, width, area, perimeter;
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Enter the length:");
+//       length = in.nextFloat();
+//
+//       System.out.print("Enter the width: ");
+//       width = in.nextFloat();
+//
+//       perimeter = 2 * (length + width);
+//
+//       area = length * width;
+//       System.out.println("Perimeter of rectangle " + perimeter + " units. ");
+//       System.out.println("Area of rectangle is " + area + " sq. units. ");
+//        System.out.println("The length of your room is " + length);
+////        String width = scanner.nextLine();
+//        System.out.println("The width of your room is " + width);
     }
 }
