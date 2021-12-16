@@ -32,8 +32,13 @@ public class ControlFlowExercises {
 //            i = Math.pow(i, 2);
 //        }while(i < 1000000);
 
-        for (double i =  2; i < 1000000; i = Math.pow(i, 2)) {
-            System.out.println((int)i);
-        }
+//        for (double i =  2; i < 1000000; i = Math.pow(i, 2)) {
+//            System.out.println((int)i);
+//        }
+
+//        2. Fizzbuzz
+        for (int i = 1; i < 100; i++,
+           System.out.println(i % 3 == 0 || i % 5 == 0 ? ((i % 3) == 0 ?
+            "fizz" : "") + ((i % 5) == 0 ? "buzz" : "") : i));
     }
 }
