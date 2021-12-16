@@ -19,9 +19,9 @@ public class ConsoleExercises {
 //        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 3 words");
 //        String text = "words";
-        String text1= scanner.nextLine();
-        String text2 =scanner.nextLine();
-        String text3= scanner.nextLine();
+        String text1= scanner.next();
+        String text2 =scanner.next();
+        String text3= scanner.next();
         System.out.println("You wrote "+ text1  + text2 + text3);
 
 //        #3
@@ -34,10 +34,23 @@ public class ConsoleExercises {
         System.out.println(sentence);
 
 //        Calculate the perimeter
-        System.out.println("Enter length and width of your room");
-        String length = scanner.nextLine();
-        System.out.println("The length of your room is " + length);
-        String width = scanner.nextLine();
-        System.out.println("The width of your room is " + width);
+//        P= 2(l+w);
+
+        float length, width, area, perimeter;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the length of the rectangle:");
+       length = in.nextFloat();
+
+       System.out.print("Enter the width of the rectangle: ");
+       width = in.nextFloat();
+
+       perimeter = 2 * (length + width);
+
+       area = length * width;
+       System.out.println("Perimeter of rectangle " + perimeter + " units. ");
+       System.out.println("Area of rectangle is " + area + " sq. units. ");
+//        System.out.println("The length of your room is " + length);
+//        String width = scanner.nextLine();
+//        System.out.println("The width of your room is " + width);
     }
 }
