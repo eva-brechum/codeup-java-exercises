@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 //        LOOPS BASICS
@@ -37,8 +39,35 @@ public class ControlFlowExercises {
 //        }
 
 //        2. Fizzbuzz
-        for (int i = 1; i < 100; i++,
-           System.out.println(i % 3 == 0 || i % 5 == 0 ? ((i % 3) == 0 ?
-            "fizz" : "") + ((i % 5) == 0 ? "buzz" : "") : i));
+//        for (int i = 1; i < 100; i++,
+//           System.out.println(i % 3 == 0 || i % 5 == 0 ? ((i % 3) == 0 ?
+//            "fizz" : "") + ((i % 5) == 0 ? "buzz" : "") : i));
+//         }
+//        3. Display table of powers
+        Scanner sc = new Scanner(System.in);
+        String userChoice = "y";
+        while (userChoice.equalsIgnoreCase("y")) {
+            System.out.println("Enter an integer");
+            int userInput = sc.nextInt();
+            System.out.println("");
+            System.out.println("Here is your table!");
+            System.out.println("");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | ------");
+            for (int i = 1; i <= userInput; i++) {
+                int numberSquared = (int) Math.pow(i, 2);
+                int numberCubed = (int) Math.pow(i, 3);
+                String message = "\n" + i + "     |" + numberSquared + "      |" + numberCubed;
+                System.out.print(message);
+//            System.out.println(i + "      |" + (i * i) + "        |" + "  " + (i * i * i));
+            }
+//            if user wants to continue
+            System.out.print("\nwant to Continue? (y/n): ");
+            userChoice = sc.next();
+            System.out.println();
+        }
+        }
+
     }
-}
+
+
