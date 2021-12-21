@@ -57,12 +57,16 @@ public class JavaBasicsExercises {
 //                multiply, subtract, divide, remainder);
 
 //        Write a Java program that takes a number as input and prints its multiplication table upto 10.
-            System.out.print("Input a number: ");
-            int num= sc.nextInt();
-            for (int i = 1; i <=10; i++) {
-                System.out.println(num + "*" + i + "=" + (num * i));
-        }
+//            System.out.print("Input a number: ");
+//            int num= sc.nextInt();
+//            for (int i = 1; i <=10; i++) {
+//                System.out.println(num + "*" + i + "=" + (num * i));
+//        }
 
-
+//        Write a Java program to display the following pattern.
+            System.out.println("    J   a  v    v  a");
+            System.out.println("    J  a a  v  v  a a");
+            System.out.println("J   J aaaaa  V V aaaaa");
+            System.out.println(" JJ  a     a  V a      a");
     }
 }
