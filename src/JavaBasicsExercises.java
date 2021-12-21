@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class JavaBasicsExercises {
     public static void main(String[] args) {
 //        Write a Java program to print 'Hello' on screen and
@@ -20,13 +21,36 @@ public class JavaBasicsExercises {
 //        b. (55+9) % 9
 //        c. 20 + -3*5 / 8
 //        d. 5 + 15 / 3 * 2 - 8 % 3
+
+//        System.out.println(-5 + 8 * 6);
+//        System.out.println((55+9) %9);
+//        System.out.println(20 + -3*5/ 8);
+//        System.out.println(5 + 15 / 3 * 2 - 8 % 3);
+
+//        Write a Java program that takes two numbers as input and display the product of two numbers.
+       Scanner sc = new Scanner(System.in);
+//       System.out.print("input your first number: ");
+//       int num1 =sc.nextInt();
 //
-//        int x = -5;
-//        int y = 8;
-//        int z = 6;
-        System.out.println(-5 + 8 * 6);
-        System.out.println((55+9) %9);
-        System.out.println(20 + -3*5/ 8);
-        System.out.println(5 + 15 / 3 * 2 - 8 % 3);
+//       System.out.print("input your second number");
+//       int num2 = sc.nextInt();
+//
+//       System.out.println(num1 + "x" + num2 + "=" + num1 * num2);
+
+//        Write a Java program to print the sum (addition), multiply, subtract,
+//        divide and remainder of two numbers.
+        System.out.print("input the first number: ");
+        int num1 = sc.nextInt();
+
+        System.out.print("Input second number:");
+        int num2 = sc.nextInt();
+
+        int sum = num1 + num2;
+        int multiply = num1 * num2;
+        int subtract = num1 - num2;
+        int divide = num1 / num2;
+        int remainder = num1 % num2;
+
+        System.out.printf("sum =%d\nmultiply =%d\nsubstract =%d\ndivide =%d\nremainderof2 =%d\n", sum, multiply, subtract, divide, remainder);
     }
 }
