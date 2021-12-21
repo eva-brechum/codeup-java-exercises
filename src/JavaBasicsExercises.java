@@ -64,9 +64,26 @@ public class JavaBasicsExercises {
 //        }
 
 //        Write a Java program to display the following pattern.
-            System.out.println("    J   a  v    v  a");
-            System.out.println("    J  a a  v  v  a a");
-            System.out.println("J   J aaaaa  V V aaaaa");
-            System.out.println(" JJ  a     a  V a      a");
+//            System.out.println("    J   a  v    v  a");
+//            System.out.println("    J  a a  v  v  a a");
+//            System.out.println("J   J aaaaa  V V aaaaa");
+//            System.out.println(" JJ  a     a  V a      a");
+
+//        Write a Java program to compute the specified expressions and print the output.
+//        System.out.println((25.5 * 3.5-3.5 * 3.5)/(40.5-4.5));
+
+//        Write a Java program to compute a specified formula
+//        Specified Formula :
+//        4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+//        double solution = 4.0*(1- (1.0/3) + (1.0/5) -(1.0/7) + (1.0/9) - (1.0/11));
+//        System.out.println(solution);
+
+//        Write a Java program to print the area and perimeter of a circle.
+        double radius =7.5;
+        double area = radius * radius * Math.PI;
+        System.out.println("area ="+ area);
+        double perimeter = 2 * Math.PI * radius;
+        System.out.println("perimeter =" + perimeter);
+
     }
 }
