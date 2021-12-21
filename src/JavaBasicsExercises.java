@@ -78,12 +78,22 @@ public class JavaBasicsExercises {
 //        double solution = 4.0*(1- (1.0/3) + (1.0/5) -(1.0/7) + (1.0/9) - (1.0/11));
 //        System.out.println(solution);
 
-//        Write a Java program to print the area and perimeter of a circle.
-        double radius =7.5;
-        double area = radius * radius * Math.PI;
-        System.out.println("area ="+ area);
-        double perimeter = 2 * Math.PI * radius;
-        System.out.println("perimeter =" + perimeter);
+////        Write a Java program to print the area and perimeter of a circle.
+//        double radius =7.5;
+//        double area = radius * radius * Math.PI;
+//        System.out.println("area ="+ area);
+//        double perimeter = 2 * Math.PI * radius;
+//        System.out.println("perimeter =" + perimeter);
+
+//        Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+//        System.out.print("input first number: ");
+//        int num1= sc.nextInt();
+//        System.out.print("input second number: ");
+//        int num2 =sc.nextInt();
+//        System.out.print("input third number: ");
+//        int num3 =sc.nextInt();
+//
+//        System.out.println("Average is: " + (num1 + num2 + num3)/3);
 
     }
 }
