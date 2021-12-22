@@ -95,5 +95,15 @@ public class JavaBasicsExercises {
 //
 //        System.out.println("Average is: " + (num1 + num2 + num3)/3);
 
+
+//        Write a Java program to print the area and perimeter of a rectangle.
+//        double height = 8.5;
+//        double width= 5.6;
+//
+//        double perimeter = 2*(height + width);
+//        double area = height * width;
+//        System.out.printf("Perimeter ");
+
+
     }
 }
