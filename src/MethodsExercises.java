@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 public class MethodsExercises {
 
@@ -9,13 +7,24 @@ public class MethodsExercises {
     }
 
     public static int subtract(int num1, int num2) {
-        return (num1 - num2);
+        if (num1 < num2) {
+            return subtract(num2, num1);
+        } else {
+            return num1 - num2;
+        }
     }
 
     public static int multiplication(int num1, int num2) {
         return (num1 * num2);
     }
 
+    ////    Recursive multiple
+//public static int multiplyRecursio(int num1, int num2) {
+//    if(num2 == 0){
+//
+//    }else{
+//    return num1 + multiplyRecursion(num1, num2 -1)
+//}
     public static int division(int num1, int num2) {
         return (num1 / num2);
     }
@@ -50,13 +59,23 @@ public class MethodsExercises {
         System.out.println("Enter an integer from 1 to 10");
 //        long input = factorial.parseLong(sc.nextLine());
         int num = sc.nextInt();
-        long factorial = 9;
+        long factorial = 1;
         for (int i = 1; i <= num; i++) {
             factorial *= i;
 //        long input =factorial.parseLong(sc.nextLong());
         }
         System.out.printf("Factorial of %d = %d", num, factorial);
     }
+//      if user wants to continue
+//            System.out.print("\nDo you want to Continue? (y/n): ");
+//            userChoice = sc.next();
+//            System.out.println();
+
+        public static void dice() {
+            System.out.println("Enter the number of sides for a pair of dice");
+            Scanner sc = new Scanner(System.in);
+            int a = sc.nextInt();
+        }
 
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
@@ -66,11 +85,7 @@ public class MethodsExercises {
         System.out.println(division(10, 2));
         System.out.println(remainder(3, 2));
         System.out.println(getInteger(1, 10));
-      factorial();
+        factorial();
     }
 }
-//
-//    public static void dice() {
-//    System.out.println("Enter the number of sides for a pair of dice");
-//
-//    }
+
