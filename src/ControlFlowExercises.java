@@ -72,8 +72,13 @@ public class ControlFlowExercises {
 //        String choice = "y";
 //        while(choice.equalsIgnoreCase("y")){
 //            System.out.println("Enter your Grade:\t\t");
-//            double score = sc.nextDouble();
+//            int score = sc.nextInt();
+
+//        Walkthrough Solution
+        boolean gradeContinues =true;
+        while (gradeContinues) {
 //
+        }
 //
 //        }
 
