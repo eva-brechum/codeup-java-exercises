@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 public class MethodsExercises {
 
@@ -23,19 +25,9 @@ public class MethodsExercises {
     }
 
 
-    public static void main(String[] args) {
-        System.out.println(addition(7, 3));
-        System.out.println(subtract(8, 4));
-        System.out.println(multiplication(5, 5));
-        System.out.println(division(10, 2));
-        System.out.println(remainder(3, 2));
-        System.out.println(getInteger(1, 10));
-    }
-
-
 //    BONUS
 
-//    2. Create a method that validates that user input is in a certain range
+    //    2. Create a method that validates that user input is in a certain range
     public static int getInteger(int min, int max) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number between 1 and 10");
@@ -50,4 +42,35 @@ public class MethodsExercises {
         System.out.println("Good, your number is within the range");
         return userInput;
     }
+
+
+    //    3. Calculate factorial of a number
+    public static void factorial() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an integer from 1 to 10");
+//        long input = factorial.parseLong(sc.nextLine());
+        int num = sc.nextInt();
+        long factorial = 9;
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+//        long input =factorial.parseLong(sc.nextLong());
+        }
+        System.out.printf("Factorial of %d = %d", num, factorial);
+    }
+
+    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+        System.out.println(addition(7, 3));
+        System.out.println(subtract(8, 4));
+        System.out.println(multiplication(5, 5));
+        System.out.println(division(10, 2));
+        System.out.println(remainder(3, 2));
+        System.out.println(getInteger(1, 10));
+      factorial();
+    }
 }
+//
+//    public static void dice() {
+//    System.out.println("Enter the number of sides for a pair of dice");
+//
+//    }
