@@ -7,9 +7,18 @@ public class Penguin {
     public Penguin(){
 
     }
+    public static boolean canFly() {
+        return false;
+    }
 
-    public Penguin(String name) {
+    public static void areEvil() {
+        return true;
+    }
+    public Penguin(String name, int weight, String species, String sex) {
         this.name = name;
+        this.weight = weight;
+        this.species = species;
+        this.sex = sex;
     }
 
     public String getName() {
@@ -24,23 +33,19 @@ public class Penguin {
     public String getSex(){
         return sex;
     }
-    public void setName(){
-
+    public void setName(String name){
+         this.name = name;
     }
     public void setWeight(){
+         this.weight= weight;
 
     }
     public void setSpecies(){
-
+        this.species = species;
     }
     public void setSex(){
-
+        this.sex = sex;
     }
 
-    public static void canFly() {
 
-    }
-
-    public static void areEvil() {
-    }
 }
