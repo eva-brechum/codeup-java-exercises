@@ -39,11 +39,11 @@
 //
 //        Person person1 = new Person("John");
 //        Person person2 = person1;
-//        System.out.println(person1.getName());
-//        System.out.println(person2.getName());
+//        System.out.println(person1.getName());/John
+//        System.out.println(person2.getName());/John
 //        person2.setName("Jane");
-//        System.out.println(person1.getName());
-//        System.out.println(person2.getName());
+//        System.out.println(person1.getName());/Jane
+//        System.out.println(person2.getName());/Jane
 
 
         public static void main(String[] args) {
