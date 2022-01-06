@@ -20,6 +20,14 @@ import java.util.Scanner;
             answer = this.scanner.next();
             return answer.toLowerCase().startsWith("y");
      }
+
+//        public int getInt (int min, int max){
+//            int answer;
+//            do{
+//                System.out.println("");
+//            }
+//        }
+
     public static void main(String[] args) {
         Input input= new Input();
         System.out.println(input.getString());
