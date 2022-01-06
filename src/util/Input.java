@@ -1,7 +1,7 @@
 package util;
 import java.util.Scanner;
 
- class Input {
+ public class Input {
     private Scanner scanner;
 
     public Input() {
@@ -15,10 +15,10 @@ import java.util.Scanner;
         }
 
         public boolean yesNo(){
-            boolean answer;
-            System.out.print("\n Do you want to continue? (y/n): ");
-            answer = this.scanner.nextBoolean();
-            return answer;
+            String answer;
+            System.out.print("\nDo you want to continue? (y/n): ");
+            answer = this.scanner.next();
+            return answer.toLowerCase().startsWith("y");
      }
     public static void main(String[] args) {
         Input input= new Input();
