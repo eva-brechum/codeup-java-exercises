@@ -12,7 +12,7 @@ public class Penguin {
     }
 
     public static void areEvil() {
-        return true;
+//        return true;
     }
     public Penguin(String name, int weight, String species, String sex) {
         this.name = name;
