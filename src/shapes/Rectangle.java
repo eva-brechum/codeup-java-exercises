@@ -1,15 +1,15 @@
 package shapes;
 
 public class Rectangle extends Quadrilateral implements Measurable {
-protected int length;
-    protected int width;
-    public Rectangle(int length, int width){
+protected double length;
+    protected double width;
+    public Rectangle(double length, double width){
         super(length,width);
     }
-    public int setWidth(){
+    public double setWidth(){
         return width;
     }
-    public int setLength() {
+    public double setLength() {
         return length;
     }
 

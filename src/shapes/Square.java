@@ -6,11 +6,11 @@ public class Square extends Quadrilateral{
         super(side,side);
         this.side = side;
     }
-    public int setLength() {
+    public double setLength() {
         return side;
     }
 
-    public int setWidth() {
+    public double setWidth() {
         return side;
     }
 
