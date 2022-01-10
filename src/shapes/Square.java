@@ -1,5 +1,20 @@
 package shapes;
+public class Square extends Quadrilateral{
+    protected int side;
+    public Square(int side) {
 
+        super(side,side);
+        this.side = side;
+    }
+    public int setLength() {
+        return side;
+    }
+
+    public int setWidth() {
+        return side;
+    }
+
+}
 
 
 //
