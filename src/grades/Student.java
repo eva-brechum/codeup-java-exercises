@@ -4,18 +4,57 @@ import java.util.ArrayList;
 
 public class Student {
     private String name;
-    private String grades;
-
-    public Student(String name) {
-        this.name = name;
+    ArrayList<Integer> grades;
+    public String getName() {
+        return name;
     }
-
-    public static void main(String[] args) {
-
-
-        ArrayList<String> StudentNames = new ArrayList<String>();
-
-
+    public void addGrade(int grade){
+        this.grades.add(grade);
     }
+    public Student(ArrayList<Integer> grades) {
+        this.grades = grades;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    public Student(int grades) {
+//        this.grades = grades;
+//    }
+//
+//
+//    public void setName(String name) {
+//        this.name = name;
+//
+//        public String getName();
+//        public void addGrade(int grade){
+//            grades.add(grade);
+//        public double getGradeAverage();
+//    }
+//    public static void main(String[] args) {
+//
+//
+//        
+//
+//        System.out.println(grades);
+//        System.out.println(getName());
+//    }
+//    }
+//}
