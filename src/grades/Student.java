@@ -1,11 +1,15 @@
 package grades;
 
 import java.util.ArrayList;
-
+//Create a class named Student.
+// It should have private properties for the student's name, and grades.
+// The grades property should be an ArrayList of integers
 public class Student {
     private String name;
     private ArrayList<Integer> grades;
 
+// The student class should have a constructor that sets name property,
+//and initializes the grades property as an empty ArrayList.
     public Student(String name) {
         this.name = name;
         this.grades = new ArrayList<>();
@@ -27,7 +31,7 @@ public class Student {
 
     public static void main(String[] args) {
 Student eva = new Student("Eva");
-    eva.addGrade(98);
+        eva.addGrade(98);
         eva.addGrade(75);
         eva.addGrade(50);
 
@@ -48,32 +52,3 @@ Student eva = new Student("Eva");
 
 
 
-
-
-
-
-
-
-//    public Student(int grades) {
-//        this.grades = grades;
-//    }
-//
-//
-//    public void setName(String name) {
-//        this.name = name;
-//
-//        public String getName();
-//        public void addGrade(int grade){
-//            grades.add(grade);
-//        public double getGradeAverage();
-//    }
-//    public static void main(String[] args) {
-//
-//
-//        
-//
-//        System.out.println(grades);
-//        System.out.println(getName());
-//    }
-//    }
-//}
