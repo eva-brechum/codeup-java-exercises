@@ -7,7 +7,7 @@ protected double length;
         super(length,width);
     }
     public double setWidth(){
-        return width;
+         return width;
     }
     public double setLength() {
         return length;
