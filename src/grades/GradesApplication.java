@@ -12,16 +12,11 @@ public class GradesApplication {
     public static void main(String[] args) {
         // Inside the main method, create a HashMap named students.
         HashMap<String,String> students = new HashMap<>();
-        students.put("EvaDiva", "Eva");
-        students.put("Tomclumsy", "Tom");
-        students.put("pourjane", "Jane");
-        students.put("hellKat", "Kat");
-        System.out.println(students);
 
-        Student s1 = new Student("Eva");
-        s1.addGrade(95);
-        s1.addGrade(77);
-        s1.addGrade(80);
+        Student student = new Student("Eva");
+        student.addGrade(95);
+        student.addGrade(77);
+        student.addGrade(80);
         Student tom= new Student("Tom");
         tom.addGrade(84);
         tom.addGrade(69);
@@ -33,8 +28,12 @@ public class GradesApplication {
         Student s4 = new Student("Kat");
     s4.addGrade(91);
 
-
-
+        students.put("EvaDiva", "Eva");
+        students.put("Tomclumsy", "Tom");
+        students.put("pourjane", "Jane");
+        students.put("hellKat", "Kat");
+        System.out.println(students);
+        System.out.println();
     }
 
 }

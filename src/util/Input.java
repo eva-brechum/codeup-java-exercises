@@ -39,11 +39,20 @@ import java.util.Scanner;
          System.out.printf("you entered %d,userInput");
          return userInput;
      }
- }
 
-//     public double getDouble(double min, double max) {
-//         System.out.printf("");
-//         double userInput = scanner.nextDouble() {
-////         return
-//         }
-//     }
+     public double getDouble(double min, double max) {
+         System.out.println("Enter a decimal number");
+         double userInput = scanner.nextDouble();
+         if (userInput > max || userInput < min) {
+             return getDouble(min, max);
+         }
+         return userInput;
+     }
+
+     public double getDouble() {
+         System.out.println("Enter a decimal number");
+         double userInput = scanner.nextDouble();
+         System.out.println("you entered:%d, userInput");
+         return userInput;
+     }
+ }
