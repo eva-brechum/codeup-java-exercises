@@ -2,8 +2,8 @@ package util;
 import java.util.Scanner;
 
  public class Input {
-     private Scanner scanner;
-
+     Scanner scanner = new Scanner (System.in);
+     private Scanner sc;
      public Input() {
          this.scanner = new Scanner(System.in);
      }
@@ -34,10 +34,12 @@ import java.util.Scanner;
      }
 
      public int getInt() {
-         System.out.println("Enter a number");
-         int userInput = scanner.nextInt();
-         System.out.printf("you entered %d,userInput");
-         return userInput;
+         try{
+             return Integer.valueOf(getString());
+         }catch(NumberFormatException e){
+             System.out.println("you entered %d,userInput");
+             return getInt();
+         }
      }
 
      public double getDouble(double min, double max) {
@@ -50,9 +52,22 @@ import java.util.Scanner;
      }
 
      public double getDouble() {
-         System.out.println("Enter a decimal number");
-         double userInput = scanner.nextDouble();
-         System.out.println("you entered:%d, userInput");
-         return userInput;
+         try {
+             return Double.valueOf(getString());
+         } catch (NumberFormatException e) {
+             System.out.println("Enter a decimal number");
+             System.out.println(e.getMessage());
+             return getDouble();
+         }
+     }
+     public double getDouble(String prompt) {
+         System.out.println(prompt);
+         try {
+             return Double.valueOf(getString());
+         } catch (NumberFormatException e) {
+             System.out.println("Invalid input enter a number");
+             System.out.println(e.getMessage());
+             return  getDouble();
+         }
      }
  }
