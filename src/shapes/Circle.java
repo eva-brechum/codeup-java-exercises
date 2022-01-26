@@ -15,8 +15,11 @@ public class Circle {
         return 2 * pi * this.radius;
     }
 
-//    public double getRadius() {
-//        return radius;
-//    }
+    public double getRadius() {
+        return this.radius;
+    }
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
 }
