@@ -16,8 +16,15 @@ public class MoviesApplication {
             System.out.println("4- view movies in the horror category");
             int userChoice = in.getInt(0,5);
             switch (userChoice) {
-                case (0):
+                case 0:
                     System.out.println("Are sure you want to quit?");
+                    boolean confirmation = in.yesNo();
+                  if(confirmation){
+                      System.out.println("Goodbye!");
+                      choice = false;
+                  }else {
+                      System.out.println("Refreshing");
+                  }
             }
         }
     }
