@@ -25,7 +25,7 @@ import java.util.Scanner;
      }
 
      public int getInt(int min, int max) {
-         System.out.printf("Enter an integer");
+         System.out.printf("choose an option: ");
          int userInput = scanner.nextInt();
          if (userInput > max || userInput < min) {
              return getInt(min, max);
